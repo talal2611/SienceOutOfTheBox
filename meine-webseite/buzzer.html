@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buzzer Experiment – Science Out of the Box</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 70px; /* Platz für fixierte Navbar */
+    }
+    .navbar {
+      background-color: #004080;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+      text-align: left;
+    }
+    .header {
+      margin-bottom: 1rem;
+    }
+    .img-button-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .experiment-image {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block;
+    }
+    .btn-primary {
+      white-space: nowrap;
+      height: fit-content;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Science Out of the Box</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="lego.html">E-Auto</a></li>
+          <li class="nav-item"><a class="nav-link" href="motor.html">Motor</a></li>
+          <li class="nav-item"><a class="nav-link" href="elektromagnet.html">Elektromagnet</a></li>
+          <li class="nav-item"><a class="nav-link" href="magnetfeld.html">Magnetfeld</a></li>
+          <li class="nav-item"><a class="nav-link" href="buzzer.html">Buzzer</a></li>
+          <li class="nav-item"><a class="nav-link" href="upload.html">Video-Upload</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Inhalt -->
+  <main class="content">
+    <h1 class="header">Buzzer Experiment</h1>
+
+    <div class="img-button-wrapper">
+      <img src="images/buzzer.png" alt="Buzzer" class="experiment-image" />
+      <a href="pdfs/buzzer.pdf" target="_blank" class="btn btn-primary">Anleitung Buzzer</a>
+    </div>
+
+    <section>
+      <h2>Beschreibung</h2>
+      <p>Der Buzzer ist ein elektronisches Bauteil, das Schall erzeugt, wenn Strom durch ihn fließt. Er wird oft verwendet, um akustische Signale in Geräten anzuzeigen.</p>
+
+      <h3>Materialien</h3>
+      <ul>
+        <li>Buzzer (Piezo-Summer)</li>
+        <li>Batterie (9V oder 3x AA)</li>
+        <li>Kabel</li>
+        <li>Schalter</li>
+      </ul>
+
+      <h3>Aufbau</h3>
+      <p>Verbinde den Buzzer mit der Batterie und schließe einen Schalter in den Stromkreis ein, um den Ton ein- und auszuschalten.</p>
+
+      <h3>Erklärung</h3>
+      <p>Wenn der Stromkreis geschlossen ist, fließt Strom durch den Buzzer, der einen Ton erzeugt. Öffnet man den Schalter, unterbricht man den Stromfluss, und der Ton stoppt.</p>
+
+      <h3>Video</h3>
+      <video controls style="max-width: 100%; height: auto;">
+        <source src="videos/buzzer-demo.mp4" type="video/mp4" />
+        Dein Browser unterstützt das Video-Tag nicht.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Science Out of the Box
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
